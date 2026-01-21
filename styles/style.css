@@ -1,0 +1,191 @@
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Shared style */
+.text-white {
+    color: white;
+}
+
+
+body {
+    background-color: rgb(44, 8, 78);
+    color: white;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.btn {
+    color: aliceblue;
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    padding: 10px 32px;
+    border-radius: 918px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.tech {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+#menu {
+    display: none;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* banner section style */
+.banner-sec {
+    display: grid;
+}
+
+
+.banner-image {
+    position: relative;
+    display: flex;
+    margin: 101px 525px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image {
+    display: flex;
+}
+
+
+.banner-buttons {
+    display: flex;
+}
+
+
+.banner-des {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner-sec {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.extra-image {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-135%, -55%);
+}
+
+
+.description {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+.new {
+    color: rgb(14, 1, 1);
+    background-color: #00FF88;
+    width: 88px;
+    height: 55px;
+    border-radius: 200px;
+    font-size: 1.2rem;
+    margin-left: -25%;
+}
+
+
+.subscribe-btn {
+    color: green;
+    border: 5px solid rgb(206, 220, 206);
+    padding: 10px 32px;
+    background-color: rgb(228, 227, 228);
+    border-radius: 918px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* Responsive design */
+@media screen and (max-width:576px) {
+    .hamburger {
+        display: block;
+        color: white;
+    }
+    nav ul {
+        display: none;
+    }
+    header .tech .btn {
+        display: none;
+    }
+    .tech {
+        justify-content: space-between;
+        margin: 25px;
+    }
+    .banner-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;          
+        min-height: 100vh;      
+        background-size: cover;    
+        background-position: top;    
+        background-repeat: no-repeat;
+        padding-bottom: 40px;
+    }
+    .banner-image{
+        margin: 60px 0 30px 0;        
+    }
+    .description{
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    .banner-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+@media screen and(min-width:576px) and (max-width:992px) {
+
+
+}
