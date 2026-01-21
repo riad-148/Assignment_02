@@ -133,7 +133,7 @@ nav ul li a {
 
 
 .subscribe-btn {
-    color: green;
+    color: #00FF88;
     border: 5px solid rgb(206, 220, 206);
     padding: 10px 32px;
     background-color: rgb(228, 227, 228);
@@ -150,7 +150,7 @@ nav ul li a {
 
 .star::before {
     content: "\2605";
-    color: green;
+    color: #00FF88;
     font-size: 30px;
     margin-left: 5px;
 }
@@ -196,7 +196,7 @@ nav ul li a {
 
 
 .podcast-container .podcast-card h1 {
-    color: green;
+    color: #00FF88;
     font-size: 3rem;
     font-weight: 900;
 }
@@ -211,8 +211,8 @@ nav ul li a {
 
 
 .main-container {
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1200px;
     margin: 40px auto 0;
@@ -222,22 +222,23 @@ nav ul li a {
 
 
 .main-container .card-item {
-    background-color: rgb(14, 14, 79);
+    background-color: rgb(51, 24, 81);
     border-radius: 20px;
-    padding: 30px 25px;
+    padding: 20px 15px;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 15px;
     height: 100%;
     box-sizing: border-box;
-    margin: 0 ;
+    border: 1px solid black;
+    margin: 0;
 }
 
 
 .main-container .card-item img {
-    width: 48px;
-    height: 48px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
 }
 
@@ -248,9 +249,167 @@ nav ul li a {
 
 
 }
+
+
 .main-container .card-item p {
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+.host-sec {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.host-sec h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.host-sec h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.host-sec p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.host {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgb(53, 21, 88);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+
+.host-image {
+    flex: 1;
+}
+
+
+.host-details {
+    flex: 4;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(195, 89, 168);
+    border-radius: 50%;
+    background-color: rgb(44, 8, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+
+.image {
+    gap: 20px;
+}
+
+
+.icon-circle img {
+    width: 22px;
+    height: 22px;
+}
+
+
+.feature-sec {
+    background: radial-gradient(circle at top, #2c0f4e, #140622);
+    padding: 80px 60px;
+}
+
+
+.feature-sec h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 60px;
+}
+
+
+.feature-description {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+.card {
+    flex: 1;
+    background: linear-gradient(180deg, #2e1155, #1a0830);
+    border-radius: 22px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .45);
+}
+
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+
+.video-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.card h3 {
+    margin-top: 14px;
+    font-size: 1.25rem;
+}
+
+
+.card p {
+    margin-top: 6px;
+    font-size: .95rem;
+    line-height: 1.6;
+    color: #cfc3e6;
+}
+
+
+.time {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #44ff8f;
+    font-weight: 600;
+}
+
+
+.time img {
+    width: 18px;
+    height: 18px;
 }
 
 
@@ -260,16 +419,22 @@ nav ul li a {
         display: block;
         color: white;
     }
+
+
     nav ul {
         display: none;
     }
     header .tech .btn {
         display: none;
     }
+
+
     .tech {
         justify-content: space-between;
         margin: 25px;
     }
+
+
     .banner-sec {
         display: flex;
         flex-direction: column;
@@ -278,34 +443,83 @@ nav ul li a {
         min-height: 100vh;
         padding-bottom: 40px;
     }
+
+
     .banner-image {
         margin: 60px 0 30px 0;
     }
+
+
     .description {
         margin: 0 auto 40px;
         text-align: center;
     }
+
+
     .banner-buttons {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
     }
+
+
     .podcast-container {
         display: grid;
         margin-left: 30px;
         flex-direction: column;
         grid-template-columns: repeat(2, 1fr);
     }
-        .main-container {
-        grid-template-columns:repeat(1,1fr);
+
+
+    .main-container {
+        grid-template-columns: repeat(1, 1fr);
         gap: 25px;
         padding: 0 15px;
         margin-top: 30px;
     }
+
+
     .container {
         padding: 40px 15px;
     }
+
+
+    .host {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .feature-sec {
+        padding: 50px 20px;
+    }
+
+
+    .feature-sec h2 {
+        font-size: 1.9rem;
+        margin-bottom: 40px;
+    }
+
+
+    .feature-description {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .card {
+        width: 100%;
+    }
+
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+
+    .card p {
+        font-size: .9rem;
+    }
+
+
 }
-
-
-
