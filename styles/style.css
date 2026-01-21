@@ -411,8 +411,45 @@ nav ul li a {
     width: 18px;
     height: 18px;
 }
-
-
+.techwave-footer {
+  width: 100%;
+  height: 300px;
+  background-image: url(/assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  text-align: center;
+  color: white;
+}
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.linear {
+  color: #E93EFF;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.logo-items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.copyright {
+  font-size: 14px;
+  color: gray;
+}
 /* Responsive design */
 @media screen and (max-width:576px) {
     .hamburger {
@@ -443,8 +480,18 @@ nav ul li a {
         min-height: 100vh;
         padding-bottom: 40px;
     }
-
-
+      .container {
+    flex-wrap: wrap;      
+    justify-content: center;
+  }
+  .logo-items {
+    width: 45%;              
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-items img {
+    width: 30px;
+  }
     .banner-image {
         margin: 60px 0 30px 0;
     }
@@ -520,5 +567,23 @@ nav ul li a {
     .card p {
         font-size: .9rem;
     }
+}
 
 
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+
+  .logo-items {
+    width: 40%;              
+    flex-direction: column;
+    text-align: center;
+  }
+}
